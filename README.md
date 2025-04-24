@@ -1,50 +1,27 @@
-# Welcome to your Expo app 👋
+## Funcionalidades Principais
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+* **Navegação por Abas:** Interface intuitiva com abas para Início, Produtos e Categorias.
+* **Listagem de Categorias:** Explore produtos por categorias específicas.
+* **Listagem de Produtos:** Visualize todos os produtos disponíveis.
+* **Detalhes do Produto:** Veja informações detalhadas sobre cada produto.
+* **(Outras funcionalidades que você possa ter)**
 
-## Get started
+## Tecnologias Utilizadas
 
-1. Install dependencies
+* [Expo](https://expo.dev/)
+* [React Native](https://reactnative.dev/)
+* [Expo Router](https://expo.github.io/router/)
+* [@react-navigation/native](https://reactnavigation.org/) (Se você ainda estiver usando)
+* [@expo/vector-icons](https://icons.expo.fyi/) (Para ícones)
+* **(Outras dependências importantes)**
 
-   ```bash
-   npm install
-   ```
+## Estrutura de Pastas
 
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+* `app/`: Contém os arquivos de rotas e telas da aplicação (usando Expo Router).
+    * `(tabs)/`: Layout da Tab Bar e telas dentro dela (Início, Produtos).
+    * `categorias/`: Tela de listagem de categorias e tela de produtos por categoria (`[categoria].tsx`).
+    * `produto/`: Tela de detalhes do produto (`[id].tsx`).
+* `data/`: Contém os dados estáticos do aplicativo (categorias, produtos).
+* `types/`: Contém as definições de tipo para TypeScript.
+* `assets/`: Contém recursos como imagens e ícones.
+* ... (outras pastas)
